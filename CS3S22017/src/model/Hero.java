@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package source;
+package model;
 
 /**
  *
- * @author TannerCrook
+ * @author pi
  */
 public class Hero {
     

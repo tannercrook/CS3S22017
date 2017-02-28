@@ -1,0 +1,9 @@
+ARMOR CLASS
+
+EXTENDS ITEM
+=====================
+<properties go here>
+
+
+----------------------
+<methods and functions go here>

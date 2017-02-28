@@ -1,0 +1,7 @@
+INVENTORY CLASS
+=====================
+<properties go here>
+
+
+----------------------
+<methods and functions go here>

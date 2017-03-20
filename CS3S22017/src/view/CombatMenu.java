@@ -9,7 +9,10 @@ package view;
 public class CombatMenu extends View {
 
     public CombatMenu() {
-        super()
+        super("A = Attack"
+            + "I = Use Item"
+            + "B = Block"
+            + "C = Concede")
     }
     
 }

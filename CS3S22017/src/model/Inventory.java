@@ -3,21 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package control;
+package model;
 
-import java.util.Scanner;
-import model.Hero;
 /**
  *
  * @author pi
  */
-public class Main {
-    
-   Scanner input = new Scanner(System.in);
-   
-    public static void main(String[] args) {
-     
-        
-    }
-        
+public class Inventory {
+
 }

@@ -1,0 +1,15 @@
+HERO CLASS
+=====================
+private FighterClass heroClass
+private int health
+private int maxHealth
+
+
+----------------------
+public Hero()
+public Hero(String name, FighterClass heroClass)
+public int getHealth()
+public int getCurrentHealth()
+public FighterClass getClass()
+
+

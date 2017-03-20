@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package model;
 
 /**
  *
  * @author pi
  */
-public class Main {
-    
-    public static void main(String[] args) {
-        System.out.println("Hello,Tanner");
-    }
+public class Entity {
     
 }

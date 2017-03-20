@@ -5,19 +5,10 @@
  */
 package control;
 
-import java.util.Scanner;
-import model.Hero;
 /**
  *
  * @author pi
  */
-public class Main {
+public class Combat {
     
-   Scanner input = new Scanner(System.in);
-   
-    public static void main(String[] args) {
-     
-        
-    }
-        
 }

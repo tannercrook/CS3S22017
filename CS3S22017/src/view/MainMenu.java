@@ -3,21 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package control;
+package view;
 
-import java.util.Scanner;
-import model.Hero;
 /**
  *
  * @author pi
  */
-public class Main {
+public class MainMenu {
     
-   Scanner input = new Scanner(System.in);
-   
     public static void main(String[] args) {
-     
-        
+        System.out.println("Hello,World!");
     }
-        
+    
 }

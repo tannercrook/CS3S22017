@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package control;
+package view;
 
-/**
- *
- * @author pi
- */
-public class Inventory {
+
+public class CombatMenu extends View {
+
+    public CombatMenu() {
+        super()
+    }
     
 }

@@ -3,13 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package control;
+package model;
 
-/**
- *
- * @author pi
- */
-public class Main {
-   
-        
+
+public class Weapon extends Item {
+    
 }

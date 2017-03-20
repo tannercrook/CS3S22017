@@ -9,7 +9,7 @@ package view;
  *
  * @author pi
  */
-public class Main {
+public class MainMenu {
     
     public static void main(String[] args) {
         System.out.println("Hello,World!");

@@ -7,12 +7,11 @@ package view;
 
 /**
  *
- * @author pi
+ * @author tacrook@lcsd2.org
  */
-public class MainMenu {
+public class ExampleView extends View {
     
-    public static void main(String[] args) {
-        System.out.println();
-    }
+    
+    
     
 }

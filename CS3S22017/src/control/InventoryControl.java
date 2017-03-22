@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package control;
+import static control.Main.player;
 
 /**
  *
  * @author pi
  */
-public class Inventory {
+public class InventoryControl {
     
 }

@@ -1,9 +1,7 @@
 
 package control;
 
-import static jdk.nashorn.internal.runtime.regexp.joni.Syntax.Java;
 import java.util.Scanner ;
-import static jdk.nashorn.tools.ShellFunctions.input;
 
 public class Combat {
  /* Arena has 3 options: 1- Find a Fight, 2- Redo Tutorial, 3- Challenge next boss.(auto enters into tutorial) 
@@ -22,13 +20,21 @@ public class Combat {
 
     private static class arenaAction {
         Scanner input = new Scanner(System.in);
-        private arenaAction() {
-           
-            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Items " );
+        private arenaAction() {   
+            System.out.println("Here ya go," + getPlayerName; + " the tutorial.");
+            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede " );
             System.out.println("Choice: ");
             int choice = input.nextInt();
             switch(choice){
                 case 'A': 
+                  printStats(); 
+                           
+                           
+                           
+                    
+                case 'B': 
+             
+                    
                     
                     
                     

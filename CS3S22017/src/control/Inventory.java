@@ -5,13 +5,10 @@
  */
 package control;
 
-import java.util.Scanner;
-import model.Hero;
 /**
  *
  * @author pi
  */
-public class Main {
-
-        
+public class Inventory {
+    
 }

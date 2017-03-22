@@ -6,7 +6,7 @@
 //send help
 package model;
 /*
-@author Kevin(realitylarkcrown@gmail.com)
+@author Kevin Hanson(realitylarkcrown@gmail.com)
 */
 
 public class Weapon extends Item {

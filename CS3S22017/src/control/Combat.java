@@ -21,12 +21,23 @@ public class Combat {
     
 
     private static class arenaAction {
-
+        Scanner input = new Scanner(System.in);
         private arenaAction() {
-            
-            System.out.println("Hello,welcome to the arena! What would you like to do today? 1- Challenge Tutorial Boss, 2- Quit " );
+           
+            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Items " );
             System.out.println("Choice: ");
             int choice = input.nextInt();
+            switch(choice){
+                case 'A': 
+                    
+                    
+                               
+            
+            
+            
+            
+            
+            }
         }
     }
 }

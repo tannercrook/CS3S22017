@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//send help
 package model;
-/*
-@author Kevin Hanson(realitylarkcrown@gmail.com)
-*/
 
-public class Weapon extends Item {
+/**
+ *
+ * @author pi
+ */
+public class Armor extends Item {
     
     int damage = 0;
     int durability = 10;
@@ -18,13 +18,13 @@ public class Weapon extends Item {
     private int value;
     private String name;
     
-    public Weapon() {
+    public Armor() {
         super();
         this.damage = 10;
         this.level = 1;
  
     }
-    public Weapon(String name, int value, String description, int damage, int durability, int level) {
+    public Armor(String name, int value, String description, int damage, int durability, int level) {
         this.name = name;
         this.value = value;
         this.description = description;
@@ -42,3 +42,4 @@ public class Weapon extends Item {
     
  }
 //Please commit
+

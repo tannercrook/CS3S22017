@@ -13,8 +13,7 @@ import java.util.Scanner;
 public class MainMenu {
     
     public static void main(String[] args) {
-        Scanner input = New Scanner(System.in);
-        System.out.println("Hello,World!");
+        System.out.println();
     }
     public void inTown(){
         boolean working = true;

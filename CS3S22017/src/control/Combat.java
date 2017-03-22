@@ -6,7 +6,7 @@ import java.util.Scanner ;
 import static jdk.nashorn.tools.ShellFunctions.input;
 
 public class Combat {
- /* Arena has 3 options: 1- Find a Fight, 2- Redo Tutorial, 3- Challenge next boss. 
+ /* Arena has 3 options: 1- Find a Fight, 2- Redo Tutorial, 3- Challenge next boss.(auto enters into tutorial) 
     1. Jackson, The Sideburn Wrangler - tutorial boss, ridiculously easy to defeat. Crazily named weak sauce weapon. “Wilfred, the Godslayer”.
     2. Taylor, The Big Mama
     3. Eli, The Llama Cavalier
@@ -29,6 +29,7 @@ public class Combat {
             int choice = input.nextInt();
             switch(choice){
                 case 'A': 
+                    
                     
                     
                                

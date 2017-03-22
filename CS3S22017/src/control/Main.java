@@ -13,5 +13,10 @@ import model.Hero;
  */
 public class Main {
 
+public static Hero player;
+
+public static void main(String[] args) {
+    player = new Hero();
+}
         
 }

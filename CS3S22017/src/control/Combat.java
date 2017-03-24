@@ -4,6 +4,7 @@ package control;
 import static control.Main.player;
 import java.util.Scanner ;
 import  model.Hero;
+import model.Weapon;
 public class Combat {
 
     
@@ -26,15 +27,22 @@ public class Combat {
         private void block(){
             System.out.println( player.getName() + "decided to block!");    
         }
-        
+        private void attackOption(){
+            
+        }
         Scanner input = new Scanner(System.in);
         private void arenaAction() {   
             System.out.println("Here ya go, " + player.getName() + "the tutorial.");
-            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede " );
+            System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
+            System.out.println("welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it tht you get educated!");
+            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
             int choice = input.nextInt();
+            
             switch(choice){
+                
                 case 'A': 
+                    player.getStrength();
                     
                            
                            
@@ -43,8 +51,29 @@ public class Combat {
                 case 'B': 
                     block();
                     player.getMaxHealth();
+                    player.getBlockDefense();
                     
                     
+                case 'C':
+                    
+                
+                case 'H':
+                    System.out.println("Hey! my name's Clippy, and I'm here to help! What do you need explained?");
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                 
+                        
+                        
+                        
+                        
+                       
                     
                     
                     

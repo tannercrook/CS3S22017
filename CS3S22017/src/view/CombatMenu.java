@@ -12,7 +12,7 @@ public class CombatMenu extends View {
         super("A = Attack"
             + "I = Use Item"
             + "B = Block"
-            + "C = Concede")
+            + "C = Concede");
     }
     
 }

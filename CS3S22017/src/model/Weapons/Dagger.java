@@ -11,7 +11,7 @@ import model.Weapon;
 
 /**
  *
- * @author Eli
+ * @author eli
  */
 public class Dagger extends Weapon {
 

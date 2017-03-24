@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package model.Armor;
 
 /**
  *
- * @author tacrook@lcsd2.org
+ * @author pi
  */
-public class ExampleView extends View {
+public class Greaves {
     
 }
+

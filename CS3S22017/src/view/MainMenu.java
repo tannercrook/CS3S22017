@@ -9,8 +9,7 @@ package view;
  *
  * @author pi
  */
-import java.util.Scanner;
-public class MainMenu {
+public class MainMenu extends View {
     
     public static void main(String[] args) {
         System.out.println();

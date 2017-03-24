@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.Weapons;
+package model.Armor;
 
 /**
  *
  * @author pi
  */
-public class testDagger {
+public class Helmet {
     
 }

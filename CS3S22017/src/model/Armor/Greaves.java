@@ -12,3 +12,4 @@ package model.Armor;
 public class Greaves {
     
 }
+

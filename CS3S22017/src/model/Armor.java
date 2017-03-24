@@ -12,7 +12,7 @@ package model;
 public class Armor extends Item {
     
     int level = 1;
-    int defense = 10;
+    int defense;
     private String description;
     private int value;
     private String name;
@@ -24,6 +24,7 @@ public class Armor extends Item {
  
     }
     public Armor(String name, int value, String description, int defense, int level) {
+        this.defense = 10;
         this.name = name;
         this.defense = defense;
         this.value = value;

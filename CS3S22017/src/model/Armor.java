@@ -11,32 +11,29 @@ package model;
  */
 public class Armor extends Item {
     
-    int damage = 0;
-    int durability = 10;
     int level = 1;
+    int defense = 10;
     private String description;
     private int value;
     private String name;
     
     public Armor() {
         super();
-        this.damage = 10;
         this.level = 1;
+        this.defense = 1;
  
     }
-    public Armor(String name, int value, String description, int damage, int durability, int level) {
+    public Armor(String name, int value, String description, int defense, int level) {
         this.name = name;
+        this.defense = defense;
         this.value = value;
         this.description = description;
-        this.damage = damage;
-        this.durability = durability;
         this.level = level;
         
     }
     
     public void printStats() {
-        System.out.println(damage);
-        System.out.println(durability);
+        System.out.println(defense);     
         System.out.println(level);
     }
     

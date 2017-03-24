@@ -20,14 +20,33 @@ int currentStanima = 0;
 int strength = 0;
 int speed = 0;
 int defense = 0;
+int blockDefense = defense * 2; 
+
+    public int getBlockDefense() {
+        return blockDefense;
+    }
+
+    public void setBlockDefense(int blockDefense) {
+        this.blockDefense = blockDefense;
+    }
 int currentExp = 0;
 int maxExp = 0;
 int sealPoints = 0;
 
+
+
 String name = "Null";
 String type = "Null";
 String title = "Null";
+String answer = "Null"; 
 
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
 
   
     public int getLevel() {

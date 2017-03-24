@@ -3,20 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package control;
+package model.Armor;
 
-import java.util.Scanner;
-import model.Hero;
 /**
  *
  * @author pi
  */
-public class Main {
-
-public static Hero player;
-
-public static void main(String[] args) {
-    player = new Hero();
+public class Greaves {
+    
 }
-        
-}
+

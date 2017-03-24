@@ -4,19 +4,12 @@
  * and open the template in the editor.
  */
 package control;
+import static control.Main.player;
 
-import java.util.Scanner;
-import model.Hero;
 /**
  *
  * @author pi
  */
-public class Main {
-
-public static Hero player;
-
-public static void main(String[] args) {
-    player = new Hero();
-}
-        
+public class InventoryControl {
+    
 }

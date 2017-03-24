@@ -21,7 +21,7 @@ public class Combat {
 
     
 
-    private static class arenaAction {
+    private static class tutorialFight {
         
         private void block(){
             System.out.println( player.getName() + "decided to block!");    
@@ -35,7 +35,7 @@ public class Combat {
             int choice = input.nextInt();
             switch(choice){
                 case 'A': 
-                  
+                    
                            
                            
                            
@@ -43,6 +43,7 @@ public class Combat {
                 case 'B': 
                     block();
                     player.getMaxHealth();
+                    
                     
                     
                     

@@ -9,6 +9,6 @@ package model.Weapons;
  *
  * @author pi
  */
-public class testDagger {
+public class Sword {
     
 }

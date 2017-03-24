@@ -11,7 +11,4 @@ package view;
  */
 public class ExampleView extends View {
     
-    
-    
-    
 }

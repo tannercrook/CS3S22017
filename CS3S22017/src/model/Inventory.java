@@ -31,7 +31,7 @@ public class Inventory {
         
          if (this.amount > 0) {
             for (int i = 0; i < this.amount; i++) {
-                System.out.println(i+ "       " + this.items[i].name + "    " + this.items[i].value);
+            System.out.println(i+ "     " + this.items[i].name + "    " + this.items[i].worth);
             }
         }
     

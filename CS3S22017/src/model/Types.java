@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package model;
+import static control.Main.player;
 import model.Hero;
 /**
  *

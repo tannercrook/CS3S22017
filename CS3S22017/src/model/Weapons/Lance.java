@@ -11,7 +11,7 @@ import model.Weapon;
  *
  * @author eli
  */
-    public class Sword extends Weapon {
+public class Lance extends Weapon {
 
     private int damage;
     private int level;
@@ -20,11 +20,11 @@ import model.Weapon;
     private String description;
     private int durability; 
     
-    public Sword() {
+    public Lance() {
         this.damage = 0;
         this.level = 1; 
     }
-    public Sword (String name, int value, String description, int damage, int level, int magicalHarm, int magicalIntellect) {
+    public Lance (String name, int value, String description, int damage, int level, int magicalHarm, int magicalIntellect) {
         this.name = name;
         this.value = value;
         this.description = description;
@@ -40,5 +40,3 @@ import model.Weapon;
         System.out.println(level);
     }
 }
-
-

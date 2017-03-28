@@ -10,6 +10,8 @@ package model;
  * @author pi
  */
 public class Item  {
+
+    String name;
     
     
 }

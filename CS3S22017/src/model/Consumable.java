@@ -10,5 +10,8 @@ package model;
  * @author Slime45
  */
 public class Consumable {
+
+    int worth;
+    String name;
     
 }

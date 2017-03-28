@@ -22,6 +22,7 @@ public class Types {
         player.setMaxExp(player.maxExp);
         player.setCurrentExp(0);
         player.setSealPoints(0);
+        //4
         
     }
     public void assassin(){
@@ -29,12 +30,13 @@ public class Types {
         player.setCurrentHealth(player.maxHealth);
         player.setMaxStamina(player.maxStamina + 2);
         player.setCurrentStamina(player.currentStamina);
-        player.setStrength(player.strength - 4);
+        player.setStrength(player.strength - 2);
         player.setSpeed(player.speed + 4);
         player.setDefense(player.defense - 2);
         player.setMaxExp(player.maxExp);
         player.setCurrentExp(0);
         player.setSealPoints(0);
+        //4
     }
     public void barbarian(){
         player.setMaxHealth(player.maxHealth);
@@ -47,5 +49,6 @@ public class Types {
         player.setMaxExp(player.maxExp);
         player.setCurrentExp(0);
         player.setSealPoints(0);
+        //4
     }
 }

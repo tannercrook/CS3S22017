@@ -9,7 +9,7 @@ package model;
  *
  * @author pi
  */
-public class Entity {
+public class Entity  {
     
 int level = 0;
 int maxHealth = 0;
@@ -148,7 +148,6 @@ boolean Hostlie;
     public void setHostlie(boolean Hostlie) {
         this.Hostlie = Hostlie;
     }
-
 
 
 }

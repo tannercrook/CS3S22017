@@ -7,6 +7,7 @@ package control;
 
 import java.util.Scanner;
 import model.Hero;
+import model.Entity;
 /**
  *
  * @author pi
@@ -14,7 +15,7 @@ import model.Hero;
 public class Main {
 
 public static Hero player;
-
+public static Entity Jackson;
 public static void main(String[] args) {
     player = new Hero();
 }

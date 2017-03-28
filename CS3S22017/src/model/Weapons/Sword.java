@@ -5,10 +5,40 @@
  */
 package model.Weapons;
 
+import model.Weapon;
+
 /**
  *
- * @author pi
+ * @author eli
  */
-public class Sword {
+    public class Sword extends Weapon {
+
+    private int damage;
+    private int level;
+    private String name;
+    private int value;
+    private String description;
+    private int durability; 
     
+    public Sword() {
+        this.damage = 0;
+        this.level = 1; 
+    }
+    public Sword (String name, int value, String description, int damage, int level, int magicalHarm, int magicalIntellect) {
+        this.name = name;
+        this.value = value;
+        this.description = description;
+        this.damage = damage;
+        this.level = level;
+       
+    }
+    
+    
+    public void printStats() {
+        System.out.println(damage);
+        System.out.println(durability);
+        System.out.println(level);
+    }
 }
+
+

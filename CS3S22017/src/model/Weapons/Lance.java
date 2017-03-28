@@ -7,13 +7,11 @@ package model.Weapons;
 
 import model.Weapon;
 
-
-
 /**
  *
  * @author eli
  */
-public class Dagger extends Weapon {
+public class Lance extends Weapon {
 
     private int damage;
     private int level;
@@ -22,11 +20,11 @@ public class Dagger extends Weapon {
     private String description;
     private int durability; 
     
-    public Dagger() {
+    public Lance() {
         this.damage = 0;
         this.level = 1; 
     }
-    public Dagger(String name, int value, String description, int damage, int level ) {
+    public Lance (String name, int value, String description, int damage, int level ) {
         this.name = name;
         this.value = value;
         this.description = description;

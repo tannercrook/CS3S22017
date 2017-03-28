@@ -9,5 +9,5 @@ import model.Entity;
 
 
 public class Jackson extends Entity {
-    Jackson.level == 10;
+    Jackson.level = 10;
 }

@@ -19,8 +19,11 @@ public class Combat {
     7. Eilana, The Psychotic Witch
     8. Tanner, The Bearded King 
     9. Create "Beardslayer"  
- */   Scanner input = new Scanner(System.in);
-      protected char getInput() {
+ */   
+
+    private static class tutorialFight {
+        Scanner input = new Scanner(System.in);  
+        protected char getInput() {
         
         System.out.print("Choice: ");
         String entry = input.nextLine();
@@ -28,24 +31,24 @@ public class Combat {
         char choice = entry.charAt(0);
         return choice;
     }  
-    private static class tutorialFight {
-        
         private void block(){
             System.out.println( player.getName() + "decided to block!");    
         }
         private void attackOption(){
             
         }
-        Scanner selection = new Scanner(System.in);
-        private void arenaAction() {   
+        
+        
+        private void arenaAction() {  
+           
             System.out.println("Here ya go, " + player.getName() + "the tutorial.");
             System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
             System.out.println("Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
-             choice = input.nextLine();
+            char choice = this.getInput();
             
-            switch(input){
+            switch(choice){
                 
                 case 'A': 
                     player.getStrength();
@@ -71,7 +74,7 @@ public class Combat {
                     
                     case 1: 
                         System.out.println("Alright, what do you need to know about combat?/n");
-                        System.out.println("P - What happens when I attack?, Q - What happens if my enemy attacks?, R - Quit");
+                        System.out.println("P - What happens when I attack?/n Q - What happens if my enemy attacks?/n R - Quit");
                     
                     
                     
@@ -98,6 +101,8 @@ public class Combat {
             
             }
         }
+
+       
     }
 }
     

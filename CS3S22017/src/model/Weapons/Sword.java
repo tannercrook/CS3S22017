@@ -24,7 +24,7 @@ import model.Weapon;
         this.damage = 0;
         this.level = 1; 
     }
-    public Sword (String name, int value, String description, int damage, int level, int magicalHarm, int magicalIntellect) {
+    public Sword (String name, int value, String description, int damage, int level ) {
         this.name = name;
         this.value = value;
         this.description = description;

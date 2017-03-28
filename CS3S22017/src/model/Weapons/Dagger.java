@@ -26,7 +26,7 @@ public class Dagger extends Weapon {
         this.damage = 0;
         this.level = 1; 
     }
-    public Dagger(String name, int value, String description, int damage, int level, int magicalHarm, int magicalIntellect) {
+    public Dagger(String name, int value, String description, int damage, int level ) {
         this.name = name;
         this.value = value;
         this.description = description;

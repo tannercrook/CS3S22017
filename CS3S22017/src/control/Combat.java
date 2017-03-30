@@ -59,6 +59,7 @@ public class Combat {
         }
         
         private void arenaAction() {  
+            
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 
@@ -94,8 +95,10 @@ public class Combat {
                     int helpChoice = input.nextInt();
                     
                     case 1: 
-                        System.out.println("Alright, what do you need to know about combat?/n");
-                        System.out.println("P - What happens when I attack?/n Q - What happens if my enemy attacks?/n R - Quit");
+                        System.out.println("Alright, I'll tell you what I know about combat./n"
+                                + "Combat is the main point of this game. In combat, you have three options./n"
+                                + "You can attack, block, or defend. ");
+                        
                     
                     
                     

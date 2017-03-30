@@ -15,14 +15,14 @@ public class Item  {
     int itemID = 0;
     protected String name = "An Item";
     int worth = 0;
-    String description = "A beautiful item glowing with itemness.";
+    String description = "An item with unknowningness to life";
     String type = "MISC";
     
     public Item() {
         this.itemID = 0;
         this.name = "An Item";
         this.worth = 0;
-        this.description = "A beautiful item glowing with itemness.";
+        this.description = "An item with unknowningness to life";
         this.type = "MISC";
     }
     

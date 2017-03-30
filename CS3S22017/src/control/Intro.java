@@ -7,6 +7,7 @@ package control;
 
 import static control.Main.player;
 import java.util.Scanner;
+import model.*;
 
 /**
  *
@@ -38,6 +39,14 @@ public class Intro {
                     break;
             }
         }
+            
+            
+        Entity jackson = new Entity();
+        
+        jackson.attack(player);
+        
+        
+        
     
         player.setTitle("The Novice Fighter"); 
         System.out.println("Okay then, in today's battle we have- Jackson, 'The Sideburn Wrangler!' and " + player.getName() + ", " + player.getTitle() + "! Let the fight begin!");

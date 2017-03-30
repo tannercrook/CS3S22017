@@ -8,6 +8,7 @@ package control;
 import java.util.Scanner;
 import model.Hero;
 import model.Entity;
+import control.*;
 /**
  *
  * @author pi
@@ -20,6 +21,12 @@ public static Hero player;
 public static Entity Jackson;
 public static void main(String[] args) {
     player = new Hero();
+    
+    Intro tutorial = new Intro();
+    
+    tutorial.gameSetup();
+    
+    
 }
         
 }

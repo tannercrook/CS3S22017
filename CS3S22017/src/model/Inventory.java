@@ -19,7 +19,7 @@ public class Inventory {
     Consumable[] items = new Consumable[this.size];
     
     public Inventory() {
-        
+         
     }
     
     public void print() {
@@ -44,7 +44,6 @@ public class Inventory {
     }
     
     public void addItem(Item item) {
-        this.items[this.amount] = item;
         this.amount = this.amount + 1;
         System.out.println(item.name + " Added to bag.");
         System.out.println();

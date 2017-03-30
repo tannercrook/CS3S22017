@@ -148,6 +148,18 @@ boolean Hostlie;
     public void setHostlie(boolean Hostlie) {
         this.Hostlie = Hostlie;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    public void attack(Hero player) {
+        int damage = this.level + this.strength;
+        player.setCurrentHealth(player.getCurrentHealth()-damage);
+    }
 
 
 }

@@ -6,6 +6,7 @@ import java.util.Scanner ;
 import static jdk.nashorn.tools.ShellFunctions.input;
 import  model.Hero;
 import model.Weapon;
+import model. *;
 public class Combat {
 
     
@@ -47,14 +48,14 @@ public class Combat {
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
             char choice = this.getInput();
-            
+            Entity jackson = new Entity();
             switch(choice){
                 
                 case 'A': 
                     player.getStrength();
                     
                            
-                           
+                    jackson.attack(player);
                            
                     
                 case 'B': 

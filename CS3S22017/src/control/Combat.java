@@ -23,9 +23,12 @@ public class Combat {
  */   
 
     private static class tutorialFight {
+        
+        
+        Entity jackson = new Entity();
         Scanner input = new Scanner(System.in);  
         protected char getInput() {
-        
+   
         System.out.print("Choice: ");
         String entry = input.nextLine();
         entry = entry.toUpperCase();
@@ -35,20 +38,37 @@ public class Combat {
         private void block(){
             System.out.println( player.getName() + "decided to block!");    
         }
-        private void attackOption(){
+
+        
+        private int totalDamage(Entity attacker) {
+            return attacker.getMainWeapon().getDamage();
+                
+            }
+        public int getTotalDamage(Entity attacker){
+                return this.totalDamage(attacker);
+        } 
+        public int resultHealth(){
             
+          int resultDamage = player.getCurrentHealth() - this.totalDamage(jackson);
+          return resultDamage;
+        }
+        private void dialogue1(){
+        System.out.println("Here ya go, " + player.getName() + "the tutorial.");
+        System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
+        System.out.println("Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
         }
         
-        
         private void arenaAction() {  
-           
-            System.out.println("Here ya go, " + player.getName() + "the tutorial.");
-            System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
-            System.out.println("Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
+
             char choice = this.getInput();
-            Entity jackson = new Entity();
+            
+            Weapon godSlayer = new Weapon("Wilfred, the Godslayer", 400, "Sword that slays gods.", 1, 500, 1);
+            jackson.setMainWeapon(godSlayer);
+            
+            this.totalDamage(jackson);
+
             switch(choice){
                 
                 case 'A': 

@@ -26,8 +26,19 @@ int sealPoints = 0;
 String name = "Null";
 String type = "Null";
 String title = "Null";
+
+Weapon mainHand;
     
 boolean Hostlie;
+
+
+    public Weapon getMainWeapon() {
+        return mainHand;
+    }
+    
+    public void setMainWeapon(Weapon toEquip) {
+        this.mainHand = toEquip;
+    }
 
     public int getLevel() {
         return level;

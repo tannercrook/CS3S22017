@@ -11,6 +11,16 @@ import model.Hero;
  * @author pi
  */
 public class Types {
+    
+    public void basic(){
+        player.setMaxHealth(5);
+        player.setMaxStamina(10);
+        player.setStrength(5);
+        player.setSpeed(5);
+        player.setDefense(5);
+        player.maxExp(100);
+        
+    }
     public void knight(){
         player.setMaxHealth(player.maxHealth + 4);
         player.setCurrentHealth(player.maxHealth);

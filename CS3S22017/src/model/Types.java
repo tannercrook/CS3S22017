@@ -20,6 +20,9 @@ public class Types {
         player.setMaxExp(100);
         
     }
+    
+    // knight
+    
     public void knight(){
         player.setMaxHealth(player.maxHealth + 4);
         player.setCurrentHealth(player.maxHealth);

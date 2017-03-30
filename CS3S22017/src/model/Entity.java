@@ -14,8 +14,8 @@ public class Entity  {
 int level = 0;
 int maxHealth = 0;
 int currentHealth = 0;
-int maxStanina = 0;
-int currentStanima = 0;
+int maxStamina = 0;
+int currentStamina = 0;
 int strength = 0;
 int speed = 0;
 int defense = 0;
@@ -54,19 +54,19 @@ boolean Hostlie;
     }
 
     public int getMaxStanina() {
-        return maxStanina;
+        return maxStamina;
     }
 
     public void setMaxStanina(int maxStanina) {
-        this.maxStanina = maxStanina;
+        this.maxStamina = maxStanina;
     }
 
     public int getCurrentStanima() {
-        return currentStanima;
+        return currentStamina;
     }
 
     public void setCurrentStanima(int currentStanima) {
-        this.currentStanima = currentStanima;
+        this.currentStamina = currentStanima;
     }
 
     public int getStrength() {

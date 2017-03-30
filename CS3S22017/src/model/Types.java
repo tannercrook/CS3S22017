@@ -5,7 +5,6 @@
  */
 package model;
 import static control.Main.player;
-import model.Hero;
 /**
  *
  * @author pi
@@ -18,9 +17,12 @@ public class Types {
         player.setStrength(5);
         player.setSpeed(5);
         player.setDefense(5);
-        player.maxExp(100);
+        player.setMaxExp(100);
         
     }
+    
+    // knight
+    
     public void knight(){
         player.setMaxHealth(player.maxHealth + 4);
         player.setCurrentHealth(player.maxHealth);
@@ -51,7 +53,7 @@ public class Types {
     public void barbarian(){
         player.setMaxHealth(player.maxHealth);
         player.setCurrentHealth(player.maxHealth);
-        player.setMaxStamina(player.Stamina);
+        player.setMaxStamina(player.getMaxStamina());
         player.setCurrentStamina(player.maxStamina);
         player.setStrength(player.strength + 4);
         player.setSpeed(player.speed);

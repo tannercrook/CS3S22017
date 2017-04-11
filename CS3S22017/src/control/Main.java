@@ -35,8 +35,8 @@ Axe barbAxe = new Axe("Barbariac Axe",10,"Axe from a Barbarian",4,2);
 player.setMainWeapon(trainingSword);
 
 
-Lance llamaSlayer = new Lance("Llama Slayer",);
-    
+Lance llamaSlayer = new Lance("Llama Slayer",1000,"The Weapon made of steel and Llama fur",10,5);
+//Axe larkScythe = new Axe("Lark Scythe")    
     
 }
 

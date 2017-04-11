@@ -28,7 +28,16 @@ public static void main(String[] args) {
     
     tutorial.gameSetup();
     
+    //Sword bladeOfWoe = new Sword("Blade of Woe"(Name),100(Value),"Test Sword"(Desc),50(Damage),10(level));
+Sword trainingSword = new Sword("Training Sword",1,"Sword of the Starts",2,1);
+Axe barbAxe = new Axe("Barbariac Axe",10,"Axe from a Barbarian",4,2);
+
+player.setMainWeapon(trainingSword);
+
+
+Lance llamaSlayer = new Lance("Llama Slayer",);
+    
     
 }
-Sword bladeOfWoe = new Sword("Blade of Woe",100,"Test Sword",50,10);
+
 }

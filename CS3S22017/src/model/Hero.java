@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package model;
-
+import model.*;
 import java.util.Scanner;
 import model.Weapon;
 import model.Weapons.*;
@@ -34,9 +34,6 @@ String name = "Null";
 String type = "Null";
 String title = "Null";
 String answer = "Null"; 
-
-
-
 
 Weapon mainHand;
 

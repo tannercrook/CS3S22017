@@ -6,6 +6,8 @@
 package model;
 
 import java.util.Scanner;
+import model.Weapon;
+import model.Weapons.*;
 /**
  *
  * @author pi
@@ -27,6 +29,7 @@ int sealPoints = 0;
 
 
 
+
 String name = "Null";
 String type = "Null";
 String title = "Null";
@@ -35,8 +38,23 @@ String answer = "Null";
 
 
 
+Weapon mainHand;
 
 
+
+
+public Hero () {
+   
+}
+
+
+
+    public Weapon getMainWeapon() {
+            return mainHand;
+    }
+    public void setMainWeapon(Weapon toEquip){
+        this.mainHand = toEquip;
+    }
     public int getBlockDefense() {
         return blockDefense;
     }

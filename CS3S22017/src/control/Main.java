@@ -9,6 +9,8 @@ import java.util.Scanner;
 import model.Hero;
 import model.Entity;
 import control.*;
+import model.*;
+import model.Weapons.*;
 /**
  *
  * @author pi
@@ -28,5 +30,5 @@ public static void main(String[] args) {
     
     
 }
-        
+Sword bladeOfWoe = new Sword("Blade of Woe",100,"Test Sword",50,10);
 }

@@ -74,20 +74,20 @@ public class Combat {
                 
                 case 'A': 
                     player.getStrength();
-                    
+                    player.heroAttack(jackson);
                            
                     jackson.attack(player);
                            
-                    
+                    break;
                 case 'B': 
                     block();
                     player.getMaxHealth();
                     player.getBlockDefense();
-                    
-                    
+                    jackson.blockedAttack(player);
+                    break;
                 case 'C':
                     
-                
+                    break;
                 case 'H':
                     System.out.println("Hey! my name's Clippy, and I'm here to help! What do you need explained?/n");
                     System.out.println("1 - Combat, 2 - Blocking, 3 - Conceding/n");
@@ -98,8 +98,13 @@ public class Combat {
                         System.out.println("Alright, I'll tell you what I know about combat./n"
                                 + "Combat is the main point of this game. In combat, you have three options./n"
                                 + "You can attack, block, or defend. ");
-                        
-                    
+                        break;
+                    case 2:
+                        System.out.println("When you block, your defense is doubled, however you still take damage."  );
+                        break;
+                    case 3:    
+                        System.out.println("This seems fairly self- explanatory, but since you pushed '3', I'll tell you anyway./n "
+                                + "When you concede, you automatically lose the fight and any resources you expended during that fight.");
                     
                     
                     

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package model;
-
+import  model. *;
 /**
  *
  * @author pi
@@ -168,9 +168,18 @@ boolean Hostlie;
     
     
     public void attack(Hero player) {
-        int damage = this.level + this.strength;
+        int damage = this.strength + player.getMainWeapon().getDamage();
         player.setCurrentHealth(player.getCurrentHealth()-damage);
     }
-
+    public void heroAttack(Entity victim) {
+        int enemyDamage = this.strength + this.strength;
+        victim.setCurrentHealth(victim.getCurrentHealth()-enemyDamage);
+    }
+    public void blockedAttack(Hero player) {
+        player.getLevel();
+        player.getCurrentHealth();
+        int damage = this.strength + player.getMainWeapon().getDamage();
+        player.setCurrentHealth(player.getBlockDefense()-damage);
+    }
 
 }

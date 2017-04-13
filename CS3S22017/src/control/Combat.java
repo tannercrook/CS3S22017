@@ -105,29 +105,7 @@ public class Combat {
                     case 3:    
                         System.out.println("This seems fairly self- explanatory, but since you pushed '3', I'll tell you anyway./n "
                                 + "When you concede, you automatically lose the fight and any resources you expended during that fight.");
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                 
-                        
-                        
-                        
-                        
-                       
-                    
-                    
-                    
-                    
-                               
-            
-            
-            
-            
-            
+
             }
         }
 

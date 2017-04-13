@@ -60,7 +60,7 @@ public class Combat {
         
         private void arenaAction() {  
             
-            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
+            System.out.println("Clippy: So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 
             char choice = this.getInput();

@@ -30,7 +30,7 @@ String title = "Null";
 
 Weapon mainHand = new Sword("Training Sword", 1, "A training sword", 5, 1);
     
-boolean Hostlie;
+boolean Hostile;
 
 
     public Weapon getMainWeapon() {
@@ -154,11 +154,11 @@ boolean Hostlie;
     }
 
     public boolean isHostlie() {
-        return Hostlie;
+        return Hostile;
     }
 
     public void setHostlie(boolean Hostlie) {
-        this.Hostlie = Hostlie;
+        this.Hostile = Hostlie;
     }
     
     

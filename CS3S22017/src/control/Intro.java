@@ -49,7 +49,7 @@ public class Intro {
         
     
         player.setTitle("The Novice Fighter"); 
-        System.out.println("Okay then, in today's battle we have- Jackson, 'The Sideburn Wrangler!' and " + player.getName() + ", " + player.getTitle() + "! Let the fight begin!");
+        System.out.println("Okay then, in today's battle we have- Jackson, 'The Sideburn Wrangler!' and " + player.getName() + ", '" + player.getTitle() + "'! Let the fight begin!");
         
         
         }

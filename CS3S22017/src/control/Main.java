@@ -34,10 +34,13 @@ player.setMainWeapon(trainingSword);
 Lance llamaSlayer = new Lance("Llama Slayer",100,"The Weapon made of steel and Llama fur",10,5);
 Axe larkScythe = new Axe("Lark Scythe", 200,"Weapon made from Lark feathers, blade is shaped like a beak",10,5);
 //Sword beardSlayer = new Sword("Beard Slayer", )
-    Intro tutorial = new Intro();
+ Axe portableShovel = new Axe("Portable Shovel",40,"Weapon made of rust and steel", 5,3);    
+
+
+Intro tutorial = new Intro();
     
     tutorial.gameSetup();
-    
+        
    
     
 }

@@ -74,8 +74,7 @@ public class Combat {
                 
                 case 'A': 
                     player.getStrength();
-                    player.heroAttack(jackson);
-                           
+                    player.attack(jackson);  
                     jackson.attack(player);
                            
                     break;

@@ -168,17 +168,16 @@ boolean Hostlie;
     
     
     public void attack(Hero player) {
-        int damage = this.strength + player.getMainWeapon().getDamage();
+        System.out.println("test");
+        System.out.println(this.getMainWeapon().getName());
+        System.out.println("test");
+        int damage = this.strength + this.getMainWeapon().getDamage();
         player.setCurrentHealth(player.getCurrentHealth()-damage);
-    }
-    public void heroAttack(Entity victim) {
-        int enemyDamage = this.strength + this.strength;
-        victim.setCurrentHealth(victim.getCurrentHealth()-enemyDamage);
     }
     public void blockedAttack(Hero player) {
         player.getLevel();
         player.getCurrentHealth();
-        int damage = this.strength + player.getMainWeapon().getDamage();
+        int damage = this.strength + this.getMainWeapon().getDamage();
         player.setCurrentHealth(player.getBlockDefense()-damage);
     }
 

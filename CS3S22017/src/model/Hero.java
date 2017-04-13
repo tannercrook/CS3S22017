@@ -44,7 +44,10 @@ public Hero () {
    
 }
 
-
+    public void attack(Entity victim) {
+        int heroDamage = this.strength + this.getMainWeapon().getDamage();
+        victim.setCurrentHealth(victim.getCurrentHealth()-heroDamage);
+    }
 
     public Weapon getMainWeapon() {
             return mainHand;

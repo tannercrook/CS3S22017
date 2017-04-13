@@ -27,7 +27,7 @@ int currentExp = 0;
 int maxExp = 0;
 int sealPoints = 0;
 
-
+public Inventory inventory = new Inventory ();
 
 
 String name = "Null";
@@ -192,26 +192,4 @@ public Hero () {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public class bag {
-
-        public static void removeItemAtIndex(int index) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        public static Object getItemAtIndex(int index) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        public static void print() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        public bag() {
-        }
-    }
-
-
-
-
 }
-

@@ -20,11 +20,11 @@ public class InventoryControl {
     
     public void listInventory() {
         // print the new player's inventory
-        player.bag.print();
+        player.inventory.print();
     }
     
     public void viewItem(int index) {
-        player.bag.getItemAtIndex(index).print();
+        player.inventory.getItemAtIndex(index).print();
     }
     
     
@@ -33,7 +33,7 @@ public class InventoryControl {
     }
     
     public void dropItem(int index) {
-        player.bag.removeItemAtIndex(index);
+        player.inventory.removeItemAtIndex(index);
     }
     
 }

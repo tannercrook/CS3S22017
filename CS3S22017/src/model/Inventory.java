@@ -27,18 +27,18 @@ public class Inventory {
     public void print() {
         System.out.println();
         System.out.println();
-        System.out.println("Index         Item          Worth");
-        System.out.println("--------------------------------------");
+        System.out.println("Slot Number         Item          Worth");
+        System.out.println("=======================================");
         if (this.capacity > 0) {
             for (int i = 0; i < this.capacity; i++) {
-                System.out.println(i+ "       " + this.items[i].name + "    " + this.items[i].worth);
+                System.out.println(i+ "      " + this.items[i].name + "     " + this.items[i].worth);
             }
         }
         
         for (int i = 0; i <= this.size - this.capacity - 1; i++) {
             System.out.println("[Empty]");
         }
-        System.out.println("--------------------------------------");
+        System.out.println("=======================================");
         System.out.println();
         System.out.println();
     }
@@ -46,7 +46,7 @@ public class Inventory {
     public void addItem(Item item) {
         this.items[this.capacity] = item;
         this.capacity = this.capacity + 1;
-        System.out.println(item.name + " Added to bag.");
+        System.out.println(item.name + "Item Added.");
         System.out.println();
     }
     
@@ -62,7 +62,7 @@ public class Inventory {
             this.addItem(currentWeapon);
             return (Weapon)weaponToEquip;
         } else {
-            System.out.println("That is not a weapon.");
+            System.out.println("That's a Stupid Idea, Try Again");
             return currentWeapon;
         }
     }
@@ -92,10 +92,10 @@ public class Inventory {
                     this.items[i] = this.items[i+1];
                 }
             }
-            System.out.println(deletedItem.name + " has been removed.");
+            System.out.println(deletedItem.name + " has been dropped.");
         }
         else {
-            System.out.println("You do not have that item.");
+            System.out.println("You don't have that.");
         }   
     }
     
@@ -109,7 +109,7 @@ public class Inventory {
                 }
             }
             this.capacity = this.capacity - 1;
-            System.out.println(deleting.getName() + " has been removed from your bag.");
+            System.out.println(deleting.getName() + " has been dropped.");
         } else {
             System.out.println("There is not an item in that slot.");
         }

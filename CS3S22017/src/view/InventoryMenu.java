@@ -10,18 +10,17 @@ import control.InventoryControl;
 
 public class InventoryMenu extends View {
 
-    public InventoryMenu() {
-         public static InventoryControl control = new InventoryControl();
+    public static InventoryControl control = new InventoryControl();
     
     public InventoryMenu() {
         super("\n\nINVENTORY\n"
                 + "=============\n"
-                + "L - List bag contents\n"
-                + "V - View an item\n"
-                + "U - Use item\n"
-                + "E - Equip weapon\n"
-                + "D - Drop item\n"
-                + "Q - Exit to main menu\n\n");
+                + "C - Contents\n"
+                + "V - View Item\n"
+                + "U - Use Item\n"
+                + "E - Equip\n"
+                + "D - Drop\n"
+                + "B - Back\n\n");
     }
     
     
@@ -31,7 +30,7 @@ public class InventoryMenu extends View {
         while (working) {
             char choice = this.getInput();
             switch (choice) {
-                case 'L':
+                case 'C':
                     this.listItems();
                     break;
                 case 'V':
@@ -46,7 +45,7 @@ public class InventoryMenu extends View {
                 case 'D':
                     this.dropItem();
                     break;
-                case 'Q':
+                case 'B':
                     working = false;
                     break;
                 default:
@@ -62,8 +61,8 @@ public class InventoryMenu extends View {
     }
     
     public void viewItem() {
-        System.out.println("Enter the index of the item.");
-        System.out.print("Index: ");
+        System.out.println("Enter Item Number.");
+        System.out.print("Number: ");
         int index = this.input.nextInt();
         input.nextLine();
         this.control.viewItem(index);
@@ -74,16 +73,16 @@ public class InventoryMenu extends View {
     }
     
     public void equipWeapon() {
-        System.out.println("Enter the index of the weapon.");
-        System.out.print("Index: ");
+        System.out.println("Enter Weapon Number.");
+        System.out.print("Number: ");
         int index = this.input.nextInt();
         input.nextLine();
         this.control.equipWeapon(index);
     }
     
     public void dropItem() {
-        System.out.println("Enter the index of the item.");
-        System.out.print("Index: ");
+        System.out.println("Enter Item Number.");
+        System.out.print("Number: ");
         int index = this.input.nextInt();
         input.nextLine();
         this.control.dropItem(index);

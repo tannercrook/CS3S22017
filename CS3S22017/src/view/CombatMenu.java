@@ -15,5 +15,32 @@ public class CombatMenu extends View {
                 + "B = Block/n"
                 + "C = Concede");
     }
+  @Override
+    public void presentView() {
+        boolean working = true;
+        while (working) {
+            char choice = this.getInput();
+            switch (choice) {
+                case 'A':
+                    CombatMenu attackView = CombatMenu();
+                    attackView.presentView();
+                    break;
+                case 'I':
+                    InventoryMenu itemsView = InventoryMenu();
+                    itemsView.presentView();
+                    break;
+                case 'B':
+                    nextDamage enimyAttack
+                    break;
+                case 'C':
+                    System.out.println("You Atempt to Flee");
+                    
+                default:
+                    System.out.println("You did not select a valid option.");
+                    break;
+            }
+        }
+    }
+
     
 }

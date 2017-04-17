@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package model;
-import  model. *;
+import  model.*;
+import model.Weapons.*;
 /**
  *
  * @author pi
@@ -27,7 +28,7 @@ String name = "Null";
 String type = "Null";
 String title = "Null";
 
-Weapon mainHand;
+Weapon mainHand = new Sword("Training Sword", 1, "A training sword", 5, 1);
     
 boolean Hostlie;
 

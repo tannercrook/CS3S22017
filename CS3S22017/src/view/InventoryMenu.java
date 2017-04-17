@@ -92,9 +92,6 @@ public class InventoryMenu extends View {
         
     }
 
-    public void usibleItems () static {
-        
-    }
 
 }
     

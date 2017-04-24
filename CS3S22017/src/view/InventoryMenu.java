@@ -88,9 +88,11 @@ public class InventoryMenu extends View {
         this.control.dropItem(index);
     }
     
-    public void quit() {
+    public void back() {
         
     }
+
+
 }
     
 

@@ -24,8 +24,7 @@ public class Game {
     public void gameSetup() {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to GAME!");
-        System.out.println("Enter your first name, hero:");
-        System.out.print("First Name: ");
+        System.out.println("Enter your first name, hero: ");
         String firstName = input.nextLine();
         
         player.setName(firstName);

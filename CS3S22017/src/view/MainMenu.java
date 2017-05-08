@@ -42,7 +42,8 @@ public class MainMenu extends View {
                 case 'I':
                     InventoryMenu inventoryView = new InventoryMenu();
                     inventoryView.presentView();
-                    
+                    working = false;
+                    break;
                 default:
                     System.out.println("That is not a valid option.");
                     System.out.println("Please double check that your choices are capitalized.");

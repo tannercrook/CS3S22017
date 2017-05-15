@@ -15,7 +15,7 @@ public class ArenaMenu extends View {
     public InventoryMenu() {
         super("\n\nINVENTORY\n"
                 + "=============\n"
-                + "B - Fight" + bossName
+                + "S - Fight" + bossName
                 + "X - Fight for XP\n"
                 + "B - Back\n\n");
     }
@@ -28,7 +28,7 @@ public class ArenaMenu extends View {
             char choice = this.getInput();
             switch (choice) {
                 case 'S':
-                    this.l
+                    this.l;
                     break;
                 case 'X':
                     CombatMenu combatView = CombatMenu();

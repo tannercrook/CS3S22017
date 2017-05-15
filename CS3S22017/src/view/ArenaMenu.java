@@ -28,7 +28,7 @@ public class ArenaMenu extends View {
             char choice = this.getInput();
             switch (choice) {
                 case 'S':
-                    this.l
+                    this.
                     break;
                 case 'X':
                     CombatMenu combatView = CombatMenu();

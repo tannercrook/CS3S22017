@@ -5,7 +5,7 @@
  */
 package view;
 import model. *;
-
+import control.*;
 import view.*;
 
 /**
@@ -30,8 +30,8 @@ public class MainMenu extends View {
             switch (choice){
                 case 'A':
                     System.out.println("You went to the Arena.");
-                    tutorialFight fight = new tutorialFight();
-                    tutorialFight.arenaStart();
+                    TutorialFight fight = new TutorialFight();
+                    fight.arenaStart();
                     working = false;
                     break;
                 case 'S': 

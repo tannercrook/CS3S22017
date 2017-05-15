@@ -30,7 +30,7 @@ public class CombatMenu extends View {
                     itemsView.presentView();
                     break;
                 case 'B':
-                    nextDamage enimyAttack
+                    nextDamage enemyAttack
                     break;
                 case 'C':
                     System.out.println("You Atempt to Flee");

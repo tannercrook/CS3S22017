@@ -22,7 +22,9 @@ public class MainMenu extends View {
         while (working == true){
             System.out.println("You are in Town.");
             System.out.println("Please choose what you would like to do.");
-            System.out.println("I = Inventory"
+            System.out.print("Menu" 
+                    +          "__________"
+                    +          "I = Inventory"
                     +          "A = Go to the Arena "
                     +          "S = Go to the Shop"
                     +          "H = Go to your House");

@@ -44,6 +44,7 @@ public class Inventory {
     }
     
     public void addItem(Item item) {
+        item.print();
         this.items[this.capacity] = item;
         this.capacity = this.capacity + 1;
         System.out.println(item.name + "Item Added.");

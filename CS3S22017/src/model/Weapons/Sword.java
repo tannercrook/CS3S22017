@@ -15,8 +15,6 @@ import model.Weapon;
 
     private int damage;
     private int level;
-    private String name;
-    private int value;
     private String description;
     private int durability; 
     
@@ -24,9 +22,9 @@ import model.Weapon;
         this.damage = 0;
         this.level = 1; 
     }
-    public Sword (String name, int value, String description, int damage, int level ) {
+    public Sword (String name, int worth, String description, int damage, int level ) {
         this.name = name;
-        this.value = value;
+        this.worth = worth;
         this.description = description;
         this.damage = damage;
         this.level = level;

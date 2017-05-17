@@ -30,13 +30,14 @@ import view.*;
            System.out.println("Welcome to the arena! Are you fixin' to fight?");
            System.out.println("Y/N");
            String answer = query.nextLine();
-           if(answer == "N" ){
+           if(answer.equals("Y")){
+               arenaAction();
+           }else{
                MainMenu mainMenu = new MainMenu();
                mainMenu.inTown();
                
-           }else if(answer == "Y"){
-               arenaAction();
            }
+
        }
         
         Entity jackson = new Entity();
@@ -78,7 +79,7 @@ import view.*;
         
         private void dialogue1(){
         System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
-        System.out.println("Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
+        System.out.println("Jackson: Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
         }
         public void actionStart() {    
             dialogue1();

@@ -20,7 +20,7 @@ public class Main {
 public static Hero player;
 
 
-public static Entity Jackson;
+public static Entity jackson;
 public static void main(String[] args) {
     player = new Hero();
     

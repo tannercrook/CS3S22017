@@ -49,7 +49,7 @@ public class MainMenu extends View {
                     break;
                 default:
                     System.out.println("That is not a valid option.");
-                    System.out.println("Please double check that your choices are capitalized.");
+                    System.out.println("Please double check that your choice is capitalized.");
                     working = true;
                     break;
             }

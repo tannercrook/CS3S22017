@@ -62,9 +62,7 @@ import view.*;
         
         private void block(){
             System.out.println( player.getName() + "decided to block!");    
-        }
-
-        
+        }   
         private int totalDamage(Entity attacker) {
             return attacker.getMainWeapon().getDamage();
                 
@@ -79,14 +77,16 @@ import view.*;
         }
         
         private void dialogue1(){
-        System.out.println("Here ya go, " + player.getName() + "the tutorial.");
         System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
         System.out.println("Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
         }
-        
-        public void arenaAction() {  
+        public void actionStart() {    
             dialogue1();
             prepareTutorial();
+            arenaStart();
+        }
+        public void arenaAction() {  
+
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 
@@ -107,7 +107,8 @@ import view.*;
                         player.attack(jackson);
                     }
                     jackson.attack(player);
-                    arenaAction();
+                    System.out.println(player.getName() + " has attacked!");
+                    System.out.println("You took " + this.totalDamage(jackson) + " damage!");
                     break;
                 case 'B': 
                     block();
@@ -115,7 +116,7 @@ import view.*;
                     player.getBlockDefense();
                     jackson.blockedAttack(player);
                     System.out.println("You took " + this.totalDamage(jackson) + " damage!");
-                    arenaAction();
+                    
                     break;
                 case 'C':
                     System.out.println("Aw, giving up already? Well, I don't blame you.");
@@ -124,17 +125,18 @@ import view.*;
                     MainMenu mainMenu = new MainMenu();
                     mainMenu.inTown();
                     break;
-                case 'H':
-                    System.out.println("Hey! my name's Clippy, and I'm here to help! What do you need explained?/n");
-                    System.out.println("1 - Combat, 2 - Blocking, 3 - Conceding/n");
-                    System.out.println("Choice:/n");
-                    int helpChoice = input.nextInt();
-                    break;
                 case 'I':
                     InventoryMenu itemsView = new InventoryMenu();
                     itemsView.presentView();
-                    arenaAction();
+                    
                     break;
+                case 'H':
+                    System.out.println("Hey! my name's Clippy, and I'm here to help! What do you need explained?/n");
+                    System.out.println("1 - Combat, 2 - Blocking, 3 - Conceding/n");
+                    System.out.println("Choice:");
+                    int helpChoice = input.nextInt();
+                    switch(helpChoice){
+
                     case 1: 
                         System.out.println("Alright, I'll tell you what I know about combat./n"
                                 + "Combat is the main point of this game. In combat, you have three options./n"
@@ -148,7 +150,7 @@ import view.*;
                                 + "When you concede, you automatically lose the fight and any resources you expended during that fight.");
                         break;
                         
-
+                    }
             }
         }
 

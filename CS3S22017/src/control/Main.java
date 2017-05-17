@@ -40,8 +40,10 @@ Axe larkScythe = new Axe("Lark Scythe", 200,"Weapon made from Lark feathers, bla
 Intro tutorial = new Intro();
     
     tutorial.gameSetup();
-        
-   
+  
+    TutorialFight main = new TutorialFight();     
+    main.arenaAction();
+  
     
 }
 

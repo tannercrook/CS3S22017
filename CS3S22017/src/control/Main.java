@@ -44,7 +44,7 @@ Intro tutorial = new Intro();
     tutorial.gameSetup();
   
     TutorialFight main = new TutorialFight();     
-    main.arenaAction();
+         main.actionStart();
   
     
 }

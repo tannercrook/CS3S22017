@@ -38,7 +38,6 @@ Axe larkScythe = new Axe("Lark Scythe", 200,"Weapon made from Lark feathers, bla
 
  
  player.inventory.addItem(trainingSword);
- player.inventory.print();
 
 Intro tutorial = new Intro();
     

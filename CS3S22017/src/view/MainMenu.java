@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package view;
-
+import model. *;
+import control.*;
 import view.*;
 
 /**
@@ -29,6 +30,8 @@ public class MainMenu extends View {
             switch (choice){
                 case 'A':
                     System.out.println("You went to the Arena.");
+                    TutorialFight fight = new TutorialFight();
+                    fight.arenaStart();
                     working = false;
                     break;
                 case 'S': 

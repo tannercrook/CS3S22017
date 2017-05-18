@@ -86,6 +86,17 @@ import view.*;
             prepareTutorial();
             arenaStart();
         }
+        private void arenaAttack(){
+                player.getStrength();
+                player.attack(jackson);  
+                if((player.getSpeed() - jackson.getSpeed()) > 6){
+                    player.attack(jackson);
+                }
+                jackson.attack(player);
+                System.out.println(player.getName() + " has attacked!");
+                System.out.println(player.getName() + " did " + this.totalDamage(jackson) + " damage!");
+                System.out.println("You took " + this.totalDamage(jackson) + " damage!"); 
+        }
         public void arenaAction() {  
 
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
@@ -101,15 +112,7 @@ import view.*;
             switch(choice){
                 
                 case 'A': 
-                    player.getStrength();
-                    player.attack(jackson);  
-                    
-                    if((player.getSpeed() - jackson.getSpeed()) > 6){
-                        player.attack(jackson);
-                    }
-                    jackson.attack(player);
-                    System.out.println(player.getName() + " has attacked!");
-                    System.out.println("You took " + this.totalDamage(jackson) + " damage!");
+                    arenaAttack();
                     break;
                 case 'B': 
                     block();

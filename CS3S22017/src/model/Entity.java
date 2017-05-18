@@ -169,9 +169,7 @@ boolean Hostile;
     
     
     public void attack(Hero player) {
-        System.out.println("test");
-        System.out.println(this.getMainWeapon().getName());
-        System.out.println("test");
+        //System.out.println(this.getMainWeapon().getName());
         int damage = this.strength + this.getMainWeapon().getDamage();
         player.setCurrentHealth(player.getCurrentHealth()-damage);
     }

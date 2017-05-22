@@ -28,13 +28,16 @@ import view.*;
        Scanner query = new Scanner(System.in);
         public void arenaStart(){
            System.out.println("Welcome to the arena! Are you fixin' to fight?");
-           System.out.println("Y/N");
+           System.out.println("Y/N (must be capitalized)");
            String answer = query.nextLine();
            if(answer.equals("Y")){
                arenaAction();
            }else{
                MainMenu mainMenu = new MainMenu();
                mainMenu.inTown();
+            if(answer.equals("y")){
+                System.out.println("Please capitalize all letters.");
+            }   
                
            }
 
@@ -97,8 +100,26 @@ import view.*;
                 System.out.println(player.getName() + " did " + this.totalDamage(jackson) + " damage!");
                 System.out.println("You took " + this.totalDamage(jackson) + " damage!"); 
         }
+        private void arenaBlock(){
+            block();
+            player.getMaxHealth();
+            player.getBlockDefense();
+            jackson.blockedAttack(player);
+            System.out.println("You took " + this.totalDamage(jackson) + " damage!");
+        }
+        private void concede(){
+            System.out.println("Aw, giving up already? Well, I don't blame you.");
+            System.out.println(player.getName() + " conceded!");
+            System.out.println("Jackson: Hah! Weak! Come back when you grow a pair!");
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.inTown();
+        }
+        private void items(){
+            InventoryMenu itemsView = new InventoryMenu();
+            itemsView.presentView();                   
+        }
         public void arenaAction() {  
-
+            boolean inBattle = true;
             System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 
@@ -106,59 +127,53 @@ import view.*;
             
             Weapon godSlayer = new Weapon("Wilfred, the Godslayer", 400, "Sword that slays gods.", 1, 500, 1);
             jackson.setMainWeapon(godSlayer);
-            
+            boolean running = true;
             this.totalDamage(jackson);
-
+            while(running == true){
             switch(choice){
                 
                 case 'A': 
                     arenaAttack();
                     break;
                 case 'B': 
-                    block();
-                    player.getMaxHealth();
-                    player.getBlockDefense();
-                    jackson.blockedAttack(player);
-                    System.out.println("You took " + this.totalDamage(jackson) + " damage!");
-                    
+                    arenaBlock();
                     break;
                 case 'C':
-                    System.out.println("Aw, giving up already? Well, I don't blame you.");
-                    System.out.println(player.getName() + " conceded!");
-                    System.out.println("Jackson: Hah! Weak! Come back when you grow a pair!");
-                    MainMenu mainMenu = new MainMenu();
-                    mainMenu.inTown();
+                    concede();
                     break;
                 case 'I':
-                    InventoryMenu itemsView = new InventoryMenu();
-                    itemsView.presentView();
-                    
+                    items();
                     break;
                 case 'H':
-                    System.out.println("Hey! my name's Clippy, and I'm here to help! What do you need explained?/n");
-                    System.out.println("1 - Combat, 2 - Blocking, 3 - Conceding/n");
+                    System.out.println("Hey! my name's Clippy, and I'm here to help! What do you need explained?");
+                    System.out.println("1 - Combat, 2 - Blocking, 3 - Conceding");
                     System.out.println("Choice:");
                     int helpChoice = input.nextInt();
                     switch(helpChoice){
-
+                    
                     case 1: 
-                        System.out.println("Alright, I'll tell you what I know about combat./n"
-                                + "Combat is the main point of this game. In combat, you have three options./n"
+                        System.out.println("Alright, I'll tell you what I know about combat."
+                                + "Combat is the main point of this game. In combat, you have three options."
                                 + "You can attack, block, or defend. If your speed is at least 6 higher than the opposition, you attack twice.");
                         break;
                     case 2:
                         System.out.println("When you block, your defense is doubled, however you still take damage."  );
                         break;
                     case 3:    
-                        System.out.println("This seems fairly self- explanatory, but since you pushed '3', I'll tell you anyway./n "
+                        System.out.println("This seems fairly self- explanatory, but since you pushed '3', I'll tell you anyway. "
                                 + "When you concede, you automatically lose the fight and any resources you expended during that fight.");
                         break;
                         
                     }
+            if(player.getCurrentHealth() == 0){
+                System.out.println(player.getName() + " died!");
+                running = false;
             }
+            
+            }
+            } 
         }
-
-      
+ 
     }
     
 

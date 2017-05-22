@@ -36,13 +36,15 @@ Axe larkScythe = new Axe("Lark Scythe", 200,"Weapon made from Lark feathers, bla
 //Sword beardSlayer = new Sword("Beard Slayer", )
  Axe portableShovel = new Axe("Portable Shovel",40,"Weapon made of rust and steel", 5,3);    
 
+ 
+ player.inventory.addItem(trainingSword);
 
 Intro tutorial = new Intro();
     
     tutorial.gameSetup();
   
     TutorialFight main = new TutorialFight();     
-    main.arenaAction();
+         main.actionStart();
   
     
 }

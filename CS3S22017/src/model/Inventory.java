@@ -27,11 +27,11 @@ public class Inventory {
     public void print() {
         System.out.println();
         System.out.println();
-        System.out.println("Slot Number         Item          Worth");
+        System.out.println("Slot           Item               Worth");
         System.out.println("=======================================");
         if (this.capacity > 0) {
             for (int i = 0; i < this.capacity; i++) {
-                System.out.println(i+ "      " + this.items[i].name + "     " + this.items[i].worth);
+                System.out.println(i+ "              " + this.items[i].name + "     " + this.items[i].worth);
             }
         }
         
@@ -44,6 +44,7 @@ public class Inventory {
     }
     
     public void addItem(Item item) {
+        item.print();
         this.items[this.capacity] = item;
         this.capacity = this.capacity + 1;
         System.out.println(item.name + "Item Added.");

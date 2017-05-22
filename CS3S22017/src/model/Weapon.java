@@ -16,8 +16,6 @@ public class Weapon extends Item {
     int durability = 10;
     int level = 1;
     private String description;
-    private int value;
-    private String name;
     
     public Weapon() {
         super();
@@ -25,9 +23,9 @@ public class Weapon extends Item {
         this.level = 1;
  
     }
-    public Weapon(String name, int value, String description, int damage, int durability, int level) {
+    public Weapon(String name, int worth, String description, int damage, int durability, int level) {
         this.name = name;
-        this.value = value;
+        this.worth = worth;
         this.description = description;
         this.damage = damage;
         this.durability = durability;
@@ -74,11 +72,11 @@ public class Weapon extends Item {
     }
 
     public int getValue() {
-        return value;
+        return worth;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setValue(int worth) {
+        this.worth = worth;
     }
 
     public String getName() {

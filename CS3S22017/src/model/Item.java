@@ -13,10 +13,10 @@ public class Item  {
 
     // General
     int itemID = 0;
-    protected String name = "An Item";
-    int worth = 0;
-    String description = "An item with unknowningness to life";
-    String type = "MISC";
+    protected String name = "";
+    protected int worth = 0;
+    String description = "";
+    String type = "";
     
     public Item() {
         this.itemID = 0;

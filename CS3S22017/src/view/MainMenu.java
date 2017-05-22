@@ -43,7 +43,7 @@ public class MainMenu extends View {
                 case 'H':
                     System.out.println("You went to your House.");
                     working = false;
-                    break;
+                   break;
                 case 'I':
                     InventoryMenu inventoryView = new InventoryMenu();
                     inventoryView.presentView();

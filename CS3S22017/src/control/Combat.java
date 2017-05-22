@@ -36,7 +36,7 @@ public class Combat {
         return choice;
     }  
         private void block(){
-            System.out.println( player.getName() + "decided to block!");    
+            System.out.println( player.getName() + " decided to block!");    
         }
 
         
@@ -53,7 +53,7 @@ public class Combat {
           return resultDamage;
         }
         private void dialogue1(){
-        System.out.println("Here ya go, " + player.getName() + "the tutorial.");
+        System.out.println("Here ya go, " + player.getName() + " the tutorial.");
         System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
         System.out.println("Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
         }
@@ -65,7 +65,7 @@ public class Combat {
 
             char choice = this.getInput();
             
-            Weapon godSlayer = new Weapon("Wilfred, the Godslayer", 400, "Sword that slays gods.", 1, 500, 1);
+            Weapon godSlayer = new Weapon("Wilfred, the Godslayer ", 400, " Sword that slays gods. ", 1, 500, 1);
             jackson.setMainWeapon(godSlayer);
             
             this.totalDamage(jackson);

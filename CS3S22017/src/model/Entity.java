@@ -28,7 +28,7 @@ String name = "Null";
 String type = "Null";
 String title = "Null";
 
-Weapon mainHand = new Sword("Training Sword", 1, "A training sword", 5, 1);
+Weapon mainHand = new Sword("Training Sword ", 1, " A training sword ", 5, 1);
     
 boolean Hostile;
 

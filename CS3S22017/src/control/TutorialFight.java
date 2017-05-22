@@ -65,7 +65,7 @@ import view.*;
         }
         
         private void block(){
-            System.out.println( player.getName() + "decided to block!");    
+            System.out.println( player.getName() + " decided to block!");    
         }   
         private int totalDamage(Entity attacker) {
             return attacker.getMainWeapon().getDamage();

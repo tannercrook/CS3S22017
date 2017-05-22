@@ -33,7 +33,7 @@ public class Intro {
                     player.setAnswer("yes");
                     break;
                 case "N":
-                    System.out.print("Announcer:It's not " + player.getName() +"? Then what is it?");
+                    System.out.print("Announcer: It's not " + player.getName() +"? Then what is it?");
                     System.out.print("ENTER YOUR NAME BUT, PLEASE, DO IT RIGHT THIS TIME");
                     player.setName(input.nextLine());
                     break;

@@ -89,9 +89,12 @@ public class InventoryMenu extends View {
     }
     
     public void back() {
+        if (inBattle) {
+        
+            
+        }
         
     }
-
 
 }
     

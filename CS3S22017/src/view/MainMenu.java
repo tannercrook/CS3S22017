@@ -7,6 +7,7 @@ package view;
 import model. *;
 import control.*;
 import view.*;
+import java.util.Scanner;
 
 /**
  *
@@ -22,29 +23,29 @@ public class MainMenu extends View {
         while (working == true){
             System.out.println("You are in Town.");
             System.out.println("Please choose what you would like to do.");
-            System.out.print("Menu" 
-                    +          "__________"
-                    +          "I = Inventory"
-                    +          "A = Go to the Arena "
-                    +          "S = Go to the Shop"
-                    +          "H = Go to your House");
-            int choice = input.nextInt();
+            System.out.println("I = Inventory");
+            System.out.println("A = Go to the Arena");
+//            System.out.println("S = Go to the Shop");
+//            System.out.println("H = Go to your House");
+            Scanner input = new Scanner(System.in);
+            String choice = input.nextLine();
             switch (choice){
-                case 'A':
+            
+                case "A":
                     System.out.println("You went to the Arena.");
                     TutorialFight fight = new TutorialFight();
                     fight.arenaStart();
                     working = false;
                     break;
-                case 'S': 
-                    System.out.println("You went to the Shop.");
-                    working = false;
-                    break;
-                case 'H':
-                    System.out.println("You went to your House.");
-                    working = false;
-                   break;
-                case 'I':
+//                case "S": 
+//                    System.out.println("You went to the Shop.");
+//                    working = false;
+//                    break;
+//                case "H":
+//                    System.out.println("You went to your House.");
+//                    working = false;
+//                    break;
+                case "I":
                     InventoryMenu inventoryView = new InventoryMenu();
                     inventoryView.presentView();
                     working = false;

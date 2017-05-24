@@ -6,6 +6,7 @@
 package view;
 
 import control.InventoryControl;
+import static control.Main.player;
 
 
 public class InventoryMenu extends View {
@@ -66,6 +67,7 @@ public class InventoryMenu extends View {
         int index = this.input.nextInt();
         input.nextLine();
         this.control.viewItem(index);
+        
     }
     
     public void useItem() {
@@ -89,13 +91,13 @@ public class InventoryMenu extends View {
     }
     
     public void back() {
-        if (inBattle) {
+//        if (inBattle) {
         
             
         }
         
     }
 
-}
+//}
     
 

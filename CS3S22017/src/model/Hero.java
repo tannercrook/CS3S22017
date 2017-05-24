@@ -8,6 +8,8 @@ import model.*;
 import java.util.Scanner;
 import model.Weapon;
 import model.Weapons.*;
+import control.Main;
+import control.TutorialFight;
 /**
  *
  * @author pi
@@ -39,8 +41,7 @@ Weapon mainHand;
 
 
 
-
-public Hero () {
+public Hero() {
    
 }
 

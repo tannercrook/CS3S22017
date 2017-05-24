@@ -19,6 +19,31 @@ public class Main {
 
 public static Hero player;
 
+private void SetPlayer(){
+    player.setLevel(1);
+    player.setCurrentHealth(10);
+    player.setMaxHealth(10);
+    player.setStrength(4);
+    player.setSpeed(5);
+    player.setDefense(3);
+    player.setCurrentExp(0);
+    player.setMaxExp(40);
+    player.setSealPoints(5);
+}
+
+//int level = 0;
+//int maxHealth = 0;
+//int currentHealth = 0;
+//int maxStamina = 0;
+//int currentStamina = 0;
+//int strength = 0;
+//int speed = 0;
+//int defense = 0;
+//int blockDefense = defense * 2; 
+//int currentExp = 0;
+//int maxExp = 0;
+//int sealPoints = 0;
+
 
 public static Entity jackson;
 public static void main(String[] args) {

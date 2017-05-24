@@ -58,10 +58,13 @@ import view.*;
             jackson.setSpeed(1);
             jackson.setStrength(1);
             jackson.setMaxHealth(16);
+            jackson.setCurrentHealth(16);
             jackson.setLevel(1);
             jackson.setMaxStanina(10);
             jackson.setDefense(1);
             jackson.setSealPoints(10);
+            player.setMaxHealth(10);
+            player.setCurrentHealth(10);
         }
         
         private void block(){
@@ -81,6 +84,8 @@ import view.*;
         }
         
         private void dialogue1(){
+            Weapon godSlayer = new Weapon("Wilfred, the Godslayer", 400, "Sword that slays gods.", 1, 500, 1);
+            jackson.setMainWeapon(godSlayer);
         System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
         System.out.println("Jackson: Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
         }
@@ -99,6 +104,7 @@ import view.*;
                 System.out.println(player.getName() + " has attacked!");
                 System.out.println(player.getName() + " did " + this.totalDamage(jackson) + " damage!");
                 System.out.println("You took " + this.totalDamage(jackson) + " damage!"); 
+                arenaAction();
         }
         private void arenaBlock(){
             block();
@@ -106,6 +112,7 @@ import view.*;
             player.getBlockDefense();
             jackson.blockedAttack(player);
             System.out.println("You took " + this.totalDamage(jackson) + " damage!");
+            arenaAction();
         }
         private void concede(){
             System.out.println("Aw, giving up already? Well, I don't blame you.");
@@ -120,13 +127,12 @@ import view.*;
         }
         public void arenaAction() {  
             boolean inBattle = true;
-            System.out.println("So, you're fighting, are ya? Well, what do ya want to do? A = Attack, B = Block, I = Item, C = Concede, H = Help " );
+            System.out.println("[WHAT ARE YOU GOING TO TO? You currently have " + player.getCurrentHealth() + " health. Jackson has " + jackson.getCurrentHealth() + "health.");
+            System.out.println(" A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 
             char choice = this.getInput();
-            
-            Weapon godSlayer = new Weapon("Wilfred, the Godslayer", 400, "Sword that slays gods.", 1, 500, 1);
-            jackson.setMainWeapon(godSlayer);
+          
             boolean running = true;
             this.totalDamage(jackson);
             while(running == true){

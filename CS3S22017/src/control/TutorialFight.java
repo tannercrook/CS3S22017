@@ -127,7 +127,7 @@ import view.*;
         }
         public void arenaAction() {  
             boolean inBattle = true;
-            System.out.println("[WHAT ARE YOU GOING TO TO? You currently have " + player.getCurrentHealth() + " health. Jackson has " + jackson.getCurrentHealth() + "health.");
+            System.out.println("[WHAT ARE YOU GOING TO TO? You currently have " + player.getCurrentHealth() + " health. Jackson has " + jackson.getCurrentHealth() + " health.");
             System.out.println(" A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 

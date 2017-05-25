@@ -19,11 +19,11 @@ public class Main {
 
 public static Hero player;
 
-private void SetPlayer(){
+private static void setPlayer(){
     player.setLevel(1);
-    player.setCurrentHealth(10);
-    player.setMaxHealth(10);
-    player.setStrength(4);
+    player.setCurrentHealth(15);
+    player.setMaxHealth(15);
+    player.setStrength(2);
     player.setSpeed(5);
     player.setDefense(3);
     player.setCurrentExp(0);
@@ -55,8 +55,8 @@ Axe barbAxe = new Axe("Barbariac Axe ",10," Axe from a Barbarian ",4,2);
 
 player.setMainWeapon(trainingSword);
 
- 
-Lance llamaSlayer = new Lance("Llama Slayer ",100," The Weapon made of steel and Llama fur ",10,5);
+
+Weapon llamaSlayer = new Lance("Llama Slayer ",100," The Weapon made of steel and Llama fur ",10,5);
 Axe larkScythe = new Axe("Lark Scythe ", 200," Weapon made from Lark feathers, blade is shaped like a beak ",10,5);
 //Sword beardSlayer = new Sword("Beard Slayer", )
  Axe portableShovel = new Axe("Portable Shovel ",40," Weapon made of rust and steel ", 5,3);    
@@ -67,7 +67,8 @@ Axe larkScythe = new Axe("Lark Scythe ", 200," Weapon made from Lark feathers, b
 Intro tutorial = new Intro();
     
     tutorial.gameSetup();
-  
+    setPlayer();
+    
     TutorialFight main = new TutorialFight();     
          main.actionStart();
   

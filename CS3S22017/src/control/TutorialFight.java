@@ -7,6 +7,7 @@ import static jdk.nashorn.tools.ShellFunctions.input;
 import  model.Hero;
 import model.Weapon;
 import model. *;
+import model.Weapons.Sword;
 import view.*;
 
 
@@ -22,7 +23,7 @@ import view.*;
     8. Tanner, The Bearded King 
     9. Create "Beardslayer"  
  */   
-    
+
     public class TutorialFight {
        Scanner input = new Scanner(System.in);
        Scanner query = new Scanner(System.in);
@@ -42,9 +43,13 @@ import view.*;
            }
 
        }
+        Weapon godSlayer = new Sword("Wilfred, the Godslayer", 400, "Sword that slays gods.", 2, 9001);
         
         Entity jackson = new Entity();
-          
+      
+        int totaldamage = 0;
+        int finaldamage = 0;
+        
         protected char getInput() {
    
         System.out.print("Choice: ");
@@ -62,9 +67,8 @@ import view.*;
             jackson.setLevel(1);
             jackson.setMaxStanina(10);
             jackson.setDefense(1);
+            jackson.setSpeed(4);
             jackson.setSealPoints(10);
-            player.setMaxHealth(10);
-            player.setCurrentHealth(10);
         }
         
         private void block(){
@@ -84,7 +88,6 @@ import view.*;
         }
         
         private void dialogue1(){
-            Weapon godSlayer = new Weapon("Wilfred, the Godslayer", 400, "Sword that slays gods.", 1, 500, 1);
             jackson.setMainWeapon(godSlayer);
         System.out.println("Jackson, The Sideburn Wrangler, has entered the arena!");
         System.out.println("Jackson: Welcome to the tutoral, " + player.getName() + "! Wilfred, The Godslayer and I will see to it that you get educated!");   
@@ -95,23 +98,70 @@ import view.*;
             arenaStart();
         }
         private void arenaAttack(){
-                player.getStrength();
-                player.attack(jackson);  
-                if((player.getSpeed() - jackson.getSpeed()) > 6){
-                    player.attack(jackson);
-                }
-                jackson.attack(player);
-                System.out.println(player.getName() + " has attacked!");
-                System.out.println(player.getName() + " did " + this.totalDamage(jackson) + " damage!");
-                System.out.println("You took " + this.totalDamage(jackson) + " damage!"); 
-                arenaAction();
+            if (jackson.getSpeed() > player.getSpeed()) {
+            totaldamage = (jackson.getStrength() + jackson.getMainWeapon().getDamage()) - player.getDefense() ;
+            if (totaldamage < 0) {
+                System.out.println("You took no damage!");
+            }else{
+            player.setCurrentHealth(player.getCurrentHealth() - totaldamage);
+            System.out.println("You took " + totaldamage + " damage!");
+            }
+            totaldamage =(player.getStrength() + player.getMainWeapon().getDamage()) - jackson.getDefense();
+            if (totaldamage < 0) {
+                System.out.println("Jackson took no damage!");
+            }else{
+            jackson.setCurrentHealth(jackson.getCurrentHealth() - totaldamage);
+            System.out.println("Jackson took " + totaldamage + " damage!");
+            }
+                 }else{
+            totaldamage =(player.getStrength() + player.getMainWeapon().getDamage()) - jackson.getDefense();
+            if (totaldamage < 0) {
+                System.out.println("Jackson took no damage!");
+            }else{
+            jackson.setCurrentHealth(jackson.getCurrentHealth() - totaldamage);
+            System.out.println("Jackson took " + totaldamage + " damage!");
+            }
+                        totaldamage = (jackson.getStrength() + jackson.getMainWeapon().getDamage()) - player.getDefense() ;
+            if (totaldamage < 0) {
+                System.out.println("You took no damage!");
+            }else{
+            player.setCurrentHealth(player.getCurrentHealth() - totaldamage);
+            System.out.println("You took " + totaldamage + " damage!");
+            }
+            }
+                    if (jackson.getSpeed() > player.getSpeed() + 6) {
+                         totaldamage = (jackson.getStrength() + jackson.getMainWeapon().getDamage()) - player.getDefense();
+                           if (totaldamage < 0) {
+                               System.out.println("Jackson attacked quickly!");
+                               System.out.println("You took no damage!");
+                           }else{
+                               player.setCurrentHealth(player.getCurrentHealth() - totaldamage);
+                               System.out.println("Jackson attacked quickly!");
+                               System.out.println("You took " + totaldamage + " damage!");
+                 }
+                 }
+                    if (player.getSpeed() > jackson.getSpeed() + 6) {
+                         totaldamage = (player.getStrength() + player.getMainWeapon().getDamage()) - jackson.getDefense();
+                            if (totaldamage < 0) {
+                               System.out.println("You attacked quickly!");
+                               System.out.println("Jackson took no damage!");
+                           }else{
+                               jackson.setCurrentHealth(jackson.getCurrentHealth() - totaldamage);
+                               System.out.println("You attacked quickly!");
+                               System.out.println("Jackson took " + totaldamage + " damage!");                           
+                           
+                 }
+                 }
+                    arenaAction();
         }
-        private void arenaBlock(){
-            block();
-            player.getMaxHealth();
-            player.getBlockDefense();
-            jackson.blockedAttack(player);
-            System.out.println("You took " + this.totalDamage(jackson) + " damage!");
+           private void arenaBlock(){
+            totaldamage = (player.getDefense() * 2) - (jackson.getStrength() + jackson.getMainWeapon().getDamage());
+            if (totaldamage < 0) {
+                System.out.println("You took no damage!");
+            }else{
+            player.setCurrentHealth(player.getCurrentHealth() - totaldamage);
+            System.out.println("You took " + totaldamage + " damage!");
+            }
             arenaAction();
         }
         private void concede(){
@@ -127,7 +177,7 @@ import view.*;
         }
         public void arenaAction() {  
             boolean inBattle = true;
-            System.out.println("[WHAT ARE YOU GOING TO TO? You currently have " + player.getCurrentHealth() + " health. Jackson has " + jackson.getCurrentHealth() + " health.");
+            System.out.println("[What do you want to do? You currently have " + player.getCurrentHealth() + " health. Jackson has " + jackson.getCurrentHealth() + " health.]");
             System.out.println(" A = Attack, B = Block, I = Item, C = Concede, H = Help " );
             System.out.println("Choice: ");
 

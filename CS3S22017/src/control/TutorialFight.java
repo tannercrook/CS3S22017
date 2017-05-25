@@ -66,7 +66,7 @@ import view.*;
             jackson.setCurrentHealth(16);
             jackson.setLevel(1);
             jackson.setMaxStanina(10);
-            jackson.setDefense(1);
+            jackson.setDefense(6);
             jackson.setSpeed(4);
             jackson.setSealPoints(10);
         }
@@ -155,7 +155,7 @@ import view.*;
                     arenaAction();
         }
            private void arenaBlock(){
-            totaldamage = (player.getDefense() * 2) - (jackson.getStrength() + jackson.getMainWeapon().getDamage());
+            totaldamage = (jackson.getStrength() + jackson.getMainWeapon().getDamage()) - (player.getDefense() * 2);
             if (totaldamage < 0) {
                 System.out.println("You took no damage!");
             }else{

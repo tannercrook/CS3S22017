@@ -23,9 +23,9 @@ private static void setPlayer(){
     player.setLevel(1);
     player.setCurrentHealth(15);
     player.setMaxHealth(15);
-    player.setStrength(2);
+    player.setStrength(1);
     player.setSpeed(5);
-    player.setDefense(3);
+    player.setDefense(7);
     player.setCurrentExp(0);
     player.setMaxExp(40);
     player.setSealPoints(5);
